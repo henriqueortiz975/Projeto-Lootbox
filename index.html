@@ -4,78 +4,97 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="style.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <title>A lógica de probabilidade e "sorte" em Loot Boxes e sistemas Gacha</title>
   
 </head>
 <body>
   <header>
-    <img src="Imagens/LootBox.png" alt="" />
+    <img src="Imagens/LootBox.png" alt="" class="Imagens, animate__animated animate__bounceInLeft"/>
     <div>
-      <div class="a1">A lógica de probabilidade e "sorte" em Loot Boxes e sistemas Gacha.</div>
+      <div class="a1 , animate__animated animate__bounceInDown">LootHub</div>
 
     </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#logica">Fluxograma</a>
-      <a href="#dados">Banco de dados</a>
-      <a href="#visual">Resumo Textual</a>
-      <a href="#sobre">Sobre Nós</a>
+    <nav class="animate__animated animate__bounceInDown">
+      <a href="#home" class="hehe">Home</a>
+      <a href="#fluxo" class="hehe">Exemplo de jogo</a>
+      <a href="#dados" class="hehe">Fluxograma e Dados</a>
+      <a href="#resumo" class="hehe">Resumo Textual</a>
+      <a href="#sobre" class="hehe">Sobre Nós</a>
     </nav>
     <div class="menu">☰</div>
   </header>
-
+  
   <main class="container">
-    <section id="home" class="card">
+    <section id="home" class="card" data-aos="zoom-in">
       <h1>A lógica de probabilidade e "sorte" em Loot Boxes e sistemas Gacha.</h1>
       <p>Este site apresenta a investigação da funcionalidade: 
       <strong>Abrir Loot Box / Rodar Gacha</strong>
-      . Foco em probabilidade, fluxo de decisão, modelagem de dados e impactos psicológicos.</p>
+      . Foco em probabilidade, fluxograma, banco de dados e impactos psicológicos.</p>
       <div class="flex">
         <div class="pill">Tema: Jogos</div>
       </div>
     </section>
 
-    <section id="logica" class="card2">
-      <h2>A Lógica (Fluxograma)</h2>
-      <img src="Imagens/Logica de Probabilidade (2).png" alt="Fluxograma" class="mockup" />
+    <section id="fluxo" class="card2" data-aos="zoom-in">
+      <h2>Exemplo de Jogos</h2>
+      <img src="Imagens/EA-lawsuit-lootbox.jpg" alt="Fluxograma" class="Imagens2"
+       style="width: 500px; height: auto;">
+
+    </section>
+
+    <h2 id="dados"></h2>
+    <section class="card2" data-aos="zoom-in">
+        <div class="container3">
+          <div class="bloco">
+           <h2>Fluxograma</h2>
+           <img src="Imagens/Logica de Probabilidade.png" class="Imagens2" style="width: 500px; height: auto;">
+          </div>
+
+          <div class="bloco">
+           <h2>O Modelo de Dados (Conceitual)</h2>
+           <img src="Imagens/Captura de tela 2025-12-09 172524.png " class=Imagens2 style="width: 500px; height: auto;">
+          </div>
+       </div>
+     
+
     </section>
 
     <div class="grid">
       <div>
-        <section id="dados" class="card">
-          <h2>Os Dados (Modelo de Dados)</h2>
-          <img src="Imagens/BancoDeDados.png" alt="DER" class="mockup" />
-        </section>
-
-        <section id="visual" class="card2">
+        <section class="card" id="resumo" data-aos="zoom-in">
           <h2>Resumo Textual</h2>
           <p>Os jogos com <strong>loot boxes</strong> são sistemas em que o jogador pode adquirir itens, 
             personagens ou skins, dependendo da proposta do jogo. Essas caixas são geralmente compradas com 
             moedas virtuais, moedas do próprio jogo ou dinheiro real. A mecânica funciona com base na 
             “sorte”, ou seja, em uma randomização numérica. Por exemplo: uma chance de 1/100 significa 1% 
             de possibilidade de conseguir determinado item ou personagem. Essa aleatoriedade é conhecida
-            como <strong>RNG (Random Number Generator)</strong>.
-            </p>
+            como <strong>RNG (Random Number Generator)</strong>.</p>
               
             O problema surge quando muitos jogos passam a exigir dinheiro real para tornar a experiência
             mais “fácil” ou “divertida”. Esse incentivo é reforçado pela mecânica de pity, 
             que garante ao jogador um item raro após certo número de tentativas. O pity explora a sensação 
             de estar “perto, mas ainda longe”, levando o jogador a continuar gastando para finalmente 
-            alcançar a recompensa desejada.
-            </p>
+            alcançar a recompensa desejada.</p>
+
             Apesar de parecerem mecânicas simples ou até infantis, esses sistemas podem deixar algumas
             pessoas viciadas. Isso acontece pelo desejo de completar coleções, pela frustração de não 
             conseguir o item desejado ou pela expectativa constante de “talvez conseguir na próxima 
             tentativa”. Além disso, os desenvolvedores costumam criar eventos temporários, com itens ou 
             personagens exclusivos que deixam de estar disponíveis após o fim do evento. Esses eventos 
             pressionam o jogador a tentar obter tudo rapidamente, o que pode aumentar ainda mais o gasto 
-            impulsivo em sistemas gacha. 
-          </p>
+            impulsivo em sistemas gacha. </p>
 
         </section>
       </div>
 
-      <aside class="card">
+      <aside class="card" data-aos="fade-left">
         <h2>Análise de Impacto</h2>
         <p><strong>Gatilhos usadas pelas Loot Boxes e sistemas Gacha:</strong></p>
         <ul>
@@ -91,25 +110,31 @@
       </aside>
     </div>
 
-    <section id="sobre" class="card2">
+    <section id="sobre" class="card3" data-aos="zoom-in">
       <h2>Sobre Nós</h2>
         <p><strong>Arthur da Silva Veeck</strong>
           <br/>arthur.silva.veeck@gmail.com<br/>
           <a href="https://github.com/ArthurVeeck" class="corletra">GitHub</a> /
-          <a href="https://www.linkedin.com/in/arthur-veeck-2009b1303/" class="corletra">Linkedin</a></p>
+          <a href="https://www.linkedin.com/in/arthur-veeck-2009b1303/" class="corletra">Linkedin</a>
         <p><strong>Henrique Ibarra Ortiz Urbano</strong>
           <br/>henriqueortiz3090@gmail.com<br/>
           <a href="https://github.com/henriqueortiz975" class="corletra">GitHub</a> /
-          <a href="https://www.linkedin.com/in/henrique-ibarra-ortiz-urbano-241a11368/" class="corletra">Linkedin</a></p>    
+          <a href="https://www.linkedin.com/in/henrique-ibarra-ortiz-urbano-241a11368/"
+          class="corletra">Linkedin</a>  
    
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <div class="container2"><p>&copy;2025 Nosso Site. Todos os direitos reservados.</p>
-      </div>
+      <div><p>&copy;2025 Logica de probabilidade em LootBox. Todos os direitos reservados.</p></div>
     </div>
   </footer>
 </body>
 </html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
